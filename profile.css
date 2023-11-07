@@ -1,0 +1,37 @@
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.skills, .hobbies {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+body{
+    background: palevioletred;
+}
+header {
+    background-color: #dde5ea;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+}

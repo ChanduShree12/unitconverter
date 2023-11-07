@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="unit.css">
+</head>
+<body style="background-image: url(https://c4.wallpaperflare.com/wallpaper/266/292/19/abstract-white-pattern-cube-square-hd-wallpaper-preview.jpg);">
+    <center>
+  <div class="converter">
+    <h2>Unit Converter</h2>
+    <form id="converter-form">
+      <div class="input-group">
+        <label for="value">Value:</label>
+        <input type="number" id="value" class="input-field">
+      </div>
+      <div class="input-group">
+        <label for="from-unit">From Unit:</label>
+        <select id="from-unit" class="select-field">
+          <option value="mm">Millimeters (mm)</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="m">Meters (m)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="mi">Miles (mi)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="to-unit">To Unit:</label>
+        <select id="to-unit" class="select-field">
+          <option value="mm">Millimeters (mm)</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="m">Meters (m)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="mi">Miles (mi)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="result">Result:</label>
+        <input type="text" id="result" class="input-field" readonly>
+      </div>
+      <button type="button" onclick="convertUnits()">Convert</button>
+    </form>
+  </div>
+  </center>
+  <script src="unit.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cafe</title>
+  <style>
+    h1{
+        color: white;
+    }
+    *{
+        background-image: url(https://i.pinimg.com/736x/85/b1/80/85b180384fc9113171d5705da4290c20.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 80%;
+        text-decoration: aliceblue;
+        background-size: cover;
+    }
+  </style>
+</head>
+<body><center>
+  <h1>cafe</h1>
+  
+  <p>Tea: $10.00 per cup</p>
+  <input type="number" id="teaQuantity" value="0" min="0" onchange="calculateTotal()">
+  
+  <p>Coffee: $20.00 per cup</p>
+  <input type="number" id="coffeeQuantity" value="0" min="0" onchange="calculateTotal()">
+
+  <p>milk: $30.00 per cup</p>
+  <input type="number" id="milkQuantity" value="0" min="0" onechange="calculateTotal()">
+
+  
+
+  <p>Total Cost: $<span id="totalCost">0.00</span></p>
+  
+  <script>
+    function calculateTotal() {
+      const teaPrice = 10.0;
+      const coffeePrice = 20.0;
+      const milkPrice =30.0;
+ 
+
+      const teaQuantity = parseInt(document.getElementById("teaQuantity").value);
+      const coffeeQuantity = parseInt(document.getElementById("coffeeQuantity").value);
+      const milkQuantity = parseInt(document.getElementById("milkQuantity").value);
+  
+
+      const totalCost = (teaQuantity * teaPrice) + (coffeeQuantity * coffeePrice) + (milkQuantity * milkPrice) 
+      
+      document.getElementById("totalCost").innerText = totalCost.toFixed(3);
+    }
+  </script></center>
+</body>
+</html>
